@@ -1,0 +1,43 @@
+﻿@model IEnumerable<BaiTap6.Models.NhanVien>
+@{
+    ViewBag.Title = "Search";
+}
+
+@using (Html.BeginForm("Search","Employee", FormMethod.Get))
+{
+    @Html.TextBox("search")<input type="submit" value="Search" /><p>Tìm kiếm theo tên.</p>
+}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Mã nhân viên</td>
+            <td>Họ</td>
+            <td>Tên</td>
+            <td>Giới tính</td>
+            <td>Lương</td>
+            <td>Địa chỉ</td>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="3" style="color: red">Không thấy gì hết</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.maNhanVien</td>
+                    <td>@item.hoNhanVien</td>
+                    <td>@item.tenNhanVien</td>
+                    <td>@item.gioiTinh</td>
+                    <td>@item.luong</td>
+                    <td>@item.diaChi</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

@@ -1,0 +1,89 @@
+﻿@model BaiTap6.Models.NhanVien
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.maNhanVien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.maNhanVien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hoNhanVien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hoNhanVien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tenNhanVien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tenNhanVien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gioiTinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gioiTinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngaySinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngaySinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.luong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.luong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.anhNhanVien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.anhNhanVien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diaChi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diaChi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.maPhongBan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.maPhongBan)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
