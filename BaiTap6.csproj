@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PhongBansController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -213,14 +214,18 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Employee\Them.cshtml" />
+    <Content Include="Views\Employee\Create.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Details.cshtml" />
     <Content Include="Views\Employee\Edit.cshtml" />
     <Content Include="Views\Employee\Delete.cshtml" />
-    <Content Include="Views\Employee\Division.cshtml" />
     <Content Include="Views\Employee\Employee.cshtml" />
     <Content Include="Views\Employee\Search.cshtml" />
+    <Content Include="Views\PhongBans\Create.cshtml" />
+    <Content Include="Views\PhongBans\Delete.cshtml" />
+    <Content Include="Views\PhongBans\Details.cshtml" />
+    <Content Include="Views\PhongBans\Edit.cshtml" />
+    <Content Include="Views\PhongBans\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />

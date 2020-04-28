@@ -1,13 +1,11 @@
 ﻿@model BaiTap6.Models.NhanVien
 
 @{
-    ViewBag.Title = "Them";
+    ViewBag.Title = "Create";
 }
 
-<h2>Them</h2>
 
-
-@using (Html.BeginForm("Them", "Employee", FormMethod.Post, new { enctype = "multipart/form-data" }))
+@using (Html.BeginForm("Create", "Employee", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
     

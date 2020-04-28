@@ -30,11 +30,12 @@ namespace BaiTap6.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Them(NhanVien nv)
+        public ActionResult Create(NhanVien nv)
         {
             string path = Server.MapPath("~/Images/");
             string fileName = Path.GetFileName(nv.empImg.FileName);
             string fullPath = Path.Combine(path, fileName);
+            nv.anhNhanVien = "~/Images/" + fileName;
             nv.empImg.SaveAs(fullPath);
             try
             {

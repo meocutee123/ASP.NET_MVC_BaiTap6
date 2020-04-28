@@ -12,6 +12,7 @@ namespace BaiTap6.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
     using System.Web;
     public partial class NhanVien
     {
@@ -28,7 +29,7 @@ namespace BaiTap6.Models
 
         public bool gioiTinh { get; set; }
         [DisplayName("Ngày sinh")]
-
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy}")]
         public System.DateTime ngaySinh { get; set; }
         [DisplayName("Lương")]
 
